@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddNoteFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <EditText
+            android:id="@+id/edNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Title" />
+
+        <EditText
+            android:id="@+id/edNoteDescription"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="20sp"
+            android:gravity="top"
+            android:hint="Enter Description"
+            android:maxLines="10" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10sp"
+        android:backgroundTint="@color/colorAccent"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_done_24" />
+</RelativeLayout>
